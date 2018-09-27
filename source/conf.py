@@ -76,6 +76,7 @@ pygments_style = None
 #
 import sphinx_rtd_theme
 
+html_show_sourcelink = False
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_theme_options = {
@@ -83,7 +84,7 @@ html_theme_options = {
     # Toc options
     'collapse_navigation': True,
     'sticky_navigation': True,
-    'navigation_depth': 5,
+    'navigation_depth': -1,
 }
 
 # i18n

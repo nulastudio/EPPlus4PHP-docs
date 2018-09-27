@@ -1,4 +1,7 @@
 #build stuff
 build
 
+# sublime text
+*.sublime-project
+*.sublime-workspace
 
