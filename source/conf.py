@@ -78,6 +78,13 @@ import sphinx_rtd_theme
 
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+html_theme_options = {
+    'titles_only': True,
+    # Toc options
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 5,
+}
 
 # i18n
 locale_dirs = ['locale/']
