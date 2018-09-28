@@ -36,7 +36,7 @@
     $worksheet = $package->workBook->workSheets['new sheet'];
 
     // 使用位置索引无法自动创建
-    .. $worksheet = $package->workBook->workSheets[8];
+    // $worksheet = $package->workBook->workSheets[8];
 
     $package->save();
 

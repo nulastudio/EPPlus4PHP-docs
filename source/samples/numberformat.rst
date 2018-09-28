@@ -60,3 +60,19 @@
 +--------------------------+
 | @                        |
 +--------------------------+
+
+.. code-block:: php
+
+    <?php
+
+    use nulastudio\Document\EPPlus4PHP\ExcelPackage;
+
+    $package = new ExcelPackage(__DIR__ . '/test.xlsx');
+
+    $worksheet = $package->workBook->workSheets['sheet1'];
+
+    $worksheet->cells['A1'].value = 888;
+
+    $worksheet->cells['A1'].style.numberFormat.format = '0.00';
+
+    $package->save();
