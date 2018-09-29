@@ -159,3 +159,63 @@
     $worksheet->addColumn([1, 2, 3, 4, 5]);
 
     $package->save();
+
+.. _insert-a-row:
+
+插入一行
+==========
+
+.. code-block:: php
+
+    <?php
+
+    use nulastudio\Document\EPPlus4PHP\ExcelPackage;
+
+    $package = new ExcelPackage(__DIR__ . '/test.xlsx');
+
+    $worksheet = $package->workBook->workSheets['sheet1'];
+
+    // 使用行索引
+    // 插入数组
+    $worksheet->insertRow(3, [1, 2, 3, 4, 5]);
+    // or
+    // 插入多个值
+    $worksheet->insertRow(3, 1, 2, 3, 4, 5);
+
+    // or
+    // 使用行名
+    // $worksheet->insertRow('3', [1, 2, 3, 4, 5]);
+
+    $package->save();
+
+.. hint:: 原插入位置以下的数据往下移动
+
+.. _insert-a-column:
+
+插入一列
+==========
+
+.. code-block:: php
+
+    <?php
+
+    use nulastudio\Document\EPPlus4PHP\ExcelPackage;
+
+    $package = new ExcelPackage(__DIR__ . '/test.xlsx');
+
+    $worksheet = $package->workBook->workSheets['sheet1'];
+
+    // 使用列索引
+    // 插入数组
+    $worksheet->insertColumn(5, [1, 2, 3, 4, 5]);
+    // or
+    // 插入多个值
+    $worksheet->insertColumn(5, 1, 2, 3, 4, 5);
+
+    // or
+    // 使用列名
+    // $worksheet->insertColumn('E', [1, 2, 3, 4, 5]);
+
+    $package->save();
+
+.. hint:: 插入一列记录，原插入位置以右的数据往右移动
