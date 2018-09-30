@@ -76,12 +76,12 @@ pygments_style = None
 #
 import sphinx_rtd_theme
 
-html_show_sourcelink = False
+html_show_sourcelink = True
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_theme_options = {
-    'vcs_pageview_mode': 'edit',
-    'github_url': 'https://github.com/nulastudio/EPPlus4PHP-docs',
+    'display_github': True,
+    'conf_py_path': '',
     'titles_only': True,
     # Toc options
     'collapse_navigation': True,
