@@ -2,6 +2,7 @@ EPPlus4PHP
 ==========
 
 .. toctree::
+   :maxdepth: 1
 
    ExcelConvert <EPPlus4PHP/ExcelConvert>
    ExcelPackage <EPPlus4PHP/ExcelPackage>
