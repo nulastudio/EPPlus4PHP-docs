@@ -80,7 +80,7 @@ html_show_sourcelink = True
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_theme_options = {
-    'display_github': True,
+    'display_bitbucket': True,
     'conf_py_path': '',
     'titles_only': True,
     # Toc options
