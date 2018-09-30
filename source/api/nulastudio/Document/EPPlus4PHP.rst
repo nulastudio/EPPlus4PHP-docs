@@ -10,3 +10,4 @@ EPPlus4PHP
    WorkSheet <EPPlus4PHP/WorkSheet>
    Range <EPPlus4PHP/Range>
    Style <EPPlus4PHP/Style>
+   Comment <EPPlus4PHP/Comment>
