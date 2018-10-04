@@ -80,13 +80,18 @@ html_show_sourcelink = True
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_theme_options = {
-    'display_github': True,
-    'conf_py_path': '',
     'titles_only': True,
     # Toc options
     'collapse_navigation': True,
     'sticky_navigation': True,
     'navigation_depth': -1,
+}
+html_context = {
+    "display_github": True, # Integrate GitHub
+    "github_user": "nulastudio", # Username
+    "github_repo": "EPPlus4PHP-docs", # Repo name
+    "github_version": "master", # Version
+    "conf_py_path": "", # Path in the checkout to the docs root
 }
 
 # i18n
