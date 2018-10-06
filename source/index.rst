@@ -37,6 +37,11 @@ EPPlus4PHP内部封装使用了EPPlus，仅此而已。
    VBA <samples/vba>
 
 .. toctree::
+   :caption: Excel知识
+
+   完美Excel <more-about-excel>
+
+.. toctree::
    :caption: API Reference
 
    nulastudio <api/nulastudio>
