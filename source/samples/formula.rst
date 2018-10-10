@@ -31,6 +31,8 @@
 
     $package->save();
 
+.. hint:: `支持的内置函数列表 <https://github.com/nulastudio/EPPlus4PHP/blob/master/EPPlus4PHP.Core/supported-builtin-functions.md>`_
+
 .. _using-built-in-formula-R1C1:
 
 使用R1C1样式的公式
@@ -74,7 +76,7 @@
     $worksheet->cells['A2'].value = 2;
     $worksheet->cells['A3'].value = 3;
 
-    // 添加一个方式
+    // 添加一个自定义函数
     $package->addOrReplaceFunction('MYSUM', function(array $args, array $context) {
         list($a, $b) = $args;
         return $a + $b;
