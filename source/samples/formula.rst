@@ -49,7 +49,7 @@
     $worksheet->cells['A2'].value = 2;
     $worksheet->cells['A3'].value = 3;
 
-    $worksheet->cells['A1'].formula = 'SUM(R2C1,R3C1)';
+    $worksheet->cells['A1'].formulaR1C1 = 'SUM(R2C1,R3C1)';
 
     // 5
     var_dump($worksheet->cells['A1'].value);
@@ -89,6 +89,7 @@
     $package->save();
 
 .. hint:: 自定义公式接受两个参数且返回一个结果值。
+
     array $args 传入的参数数组
     array $context 当前的上下文数组（目前尚未决定需要哪些上下文，暂时为空）
 
